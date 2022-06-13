@@ -1,0 +1,2 @@
+xdotool get_desktop_for_window <windowid>
+xdotool search --name .
