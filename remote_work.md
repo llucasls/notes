@@ -19,3 +19,4 @@ Here is a list of the 19 best freelancing platforms to earn remotely:
 17. [Workana](https://www.workana.com/)
 18. [Gun.io](https://gun.io/)
 19. [Outsourcely](https://www.outsourcely.com/)
+20. [Relocate.me](https://relocate.me/)
