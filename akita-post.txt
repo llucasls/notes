@@ -1,0 +1,49 @@
+Este é um post do Fabio Akita, criador de conteúdo, no Linkedin.
+Apenas tomei emprestado para ver se consigo tirar algum aprendizado.
+--------------------------------------------------------------------------------
+
+Toda vez que eu vejo um teste de programação ou uma aplicação pequena/MVP em
+geral feita por pessoas inexperientes. Dentre diversos erros, o que mais vejo é
+o seguinte:
+
+1. demorou um tempão no setup do projeto, nas primeiras páginas e,
+principalmente na autenticação (tela de login, já vi projetos que o cara enrolou
+1 mes e não tinha um login que funcionava);
+2. começou fazendo cruds das coisas, mas as regras de negócio principais do
+projeto não fez;
+3. começa pelo menos importante e deixa o mais importante por último ou acaba
+não tendo tempo de fazer (a dificuldade de não parar 2 segundos pra avaliar,
+dentre 10 itens pra fazer, quais são os 2 mais importantes? em vez disso faz na
+ordem apresentada, começa com o mais fácil e não faz o mais importante).
+
+Exatamente porque todo tutorial faz nessa ordem, todo mundo copia e segue sem
+pensar. O certo é o oposto:
+
+1. quais são as principais entidades (ou mais explicitamente, tabelas no caso
+de apps web ou mobile) que essa aplicação lida? Se for um mini ecommerce vai
+ser carrinho, item de carrinho, que liga produto e que liga comprador. Faz os
+models deles e brinca com esses models. Por exemplo, faça testes unitários
+deles.
+2. depois que entendeu como esses models funcionam, agora modela as rotas pra
+cada caso de uso "adicionar no carrinho, remover do carrinho, fechar a compra"
+3. agora que as rotas, models, controllers, da funcionalidade principal estão
+prontos, agora gruda as páginas que lidam com elas, mas só básico, sem florear
+nada, só o suficiente pra testar visualmente e ver algum resultado.
+4. agora que a funcionalidade principal tá pronta, vai e faz um mini-admin, com
+crud das coisas. crud é o mais trivial, ninguém espera que não se consiga fazer
+isso, é totalmente não-importante porque metade o scaffold dos frameworks já
+fazem
+5. se sobrar tempo, agora embeleza com coisas como temas/css melhor, telas de
+registro e login, etc
+
+Veja, login é a última coisa que se faz num teste ou MVP, não é a primeira.
+Todo framework tem bibliotecas que adicionam isso depois. E sim, é fora da
+ordem de tutorial, e por isso quem só segue tem problemas, porque a ordem de
+verdade é o oposto. A idéia de um teste ou MVP é justamente saber priorizar o
+mais importante, e não começar pelo "mais fácil", o mais fácil é irrelevante e
+inútil.
+
+Em resumo, começa vendo o que foi pedido, vai dar uma dúzia de tarefas/casos de
+uso. Ordena do mais importante pro menos importante. Começa por elas. Se o menos
+importante não deu tempo, tudo bem. Agora, se nem o 1o item mais importante
+consegue fazer, o resto não tem importância mais.
